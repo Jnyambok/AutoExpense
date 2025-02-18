@@ -4,3 +4,7 @@ google-auth-oauthlib
 gspread
 python-dotenv
 pandas
+
+os
+sys
+loguru
