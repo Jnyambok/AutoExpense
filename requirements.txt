@@ -5,6 +5,6 @@ gspread
 python-dotenv
 pandas
 
-os
+
 sys
 loguru
