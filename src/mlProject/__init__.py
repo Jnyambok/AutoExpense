@@ -1,14 +1,11 @@
-import os
+
 import sys
 import loguru
 from loguru import logger
 
 
-#Making the logs directory
-log_dir = "logs"
-log_filepath = os.path.join(log_dir, "running.log")
-os.makedirs(log_dir, exist_ok=True)
+fmt = "{time:MMMM D, YYYY - HH:mm:ss} - {name} - {level} - {message}"
 
-
-
-logger = loguru.getLogger(__name__)
+logger.add("logs/running.log", level="INFO", format=fmt)
+#logger.add("logs/running.log", level="ERROR", format=fmt)
+#logger = loguru.getLogger(__name__)
